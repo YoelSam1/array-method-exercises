@@ -14,6 +14,11 @@ Tip: Don't forget to set the initial value to 0
 
 const values = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const total = null; // Replace null and add .reduce code here
+const total = values.reduce((total, value) => {
+  console.log("start", total, "end", value);
+  total += value;
 
-console.log(total);
+  return total;
+}, 0);
+
+console.log("total sum value:", total);
