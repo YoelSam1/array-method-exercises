@@ -42,7 +42,7 @@ const teams = [
 const winningTeams = teams.reduce((total, currentTeam) => {
   if (currentTeam.isWinner === true) {
     // Use toLowerCase() to set the team's name in lowercase as the key
-    total[currentTeam.name.toLowerCase()] = currentTeam.score;
+    total[currentTeam.name.toLowerCase()] += currentTeam.score;
   }
   return total;
 }, {});

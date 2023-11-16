@@ -14,7 +14,7 @@ You will need to find a todo that has the following properties:
   id: 43,
 
 */
-import { todos } from './exercise-3-data.js';
+import { todos } from "./exercise-3-data.js";
 
 // The first solution is the most basic:
 const foundTodo = todos.find((todo) => {
@@ -35,7 +35,7 @@ const foundTodoConditionalCheck = todos.find((todo) => {
 // implicit return (automatic return) instead of explicitly giving a return
 // (explicitly meaning that we wrote the "return" keyword)
 const foundTodoImplicitReturn = todos.find(
-  (todo) => todo.userId === 3 && todo.id === 43,
+  (todo) => todo.userId === 3 && todo.id === 43
 );
 
 console.log(foundTodo);
